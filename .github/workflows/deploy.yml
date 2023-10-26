@@ -21,4 +21,4 @@ jobs:
       - name: build and push
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/bussiness-card .
-          docker push ${{ secrets.DOCKER_USERNAME }}/gbussiness-card
+          docker push ${{ secrets.DOCKER_USERNAME }}/bussiness-card
