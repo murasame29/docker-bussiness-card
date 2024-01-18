@@ -1,0 +1,133 @@
+/* base background */
+body {
+  background-color: #80C6E2;
+}
+/* hero-actions */
+@media screen and (min-witdh: 768px) {
+  .hero-actions {
+    align-items: flex-start;
+    flex: 1 1;
+    flex-direction: row;
+    grid-column: 1 / 2;
+    justify-content: initial;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.hero-actions > div {
+  display: flex;
+  width: 100%;
+}
+
+.hero-actions a {
+  max-width: 20rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.hero-actions a.Primary {
+  background-color: #FDDD00;
+  border: 0.0625rem solid #FDDD00;
+  box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
+  color: black;
+
+  margin-right: 20px;
+}
+
+.hero-actions a.Secondary {
+  border: 0.0625rem solid white;
+  color: white;
+}
+
+.hero-actions a.Primary, .hero-actions a.Secondary {
+  align-items: center;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+
+  font-size: 1.5rem;
+  height: 4rem;
+  line-height: 1.75rem;
+}
+
+/* header */
+.Header {
+  background-color: #80C6E2;
+  border-bottom: 1px solid #d2effb;
+  box-shadow: 0 0.0625rem 0.125rem rgba(171, 171, 171, 0.3);
+  width: 100%;
+  z-index: 10;
+}
+
+.Header-nav {
+  align-items: center;
+  display: flex;
+  height: 3.5rem;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.Header-title {
+  flex: content;
+  margin-top: 10px;
+  color: white;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.Header-logo {
+  display: block;
+  height: 3rem;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.Header-right-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.Header-menu {
+  align-items: stretch;
+  display: flex;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login button */
+
+.Header-login-button {
+  border: 1px solid rgba(255, 255, 255, 0.471);
+  border-radius: 3px;
+  display: flex;
+}
+
+.Header-login-button a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0 10px;
+}
+
+.Header-login-button a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
