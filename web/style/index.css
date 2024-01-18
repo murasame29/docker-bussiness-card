@@ -2,62 +2,6 @@
 body {
   background-color: #80C6E2;
 }
-/* hero-actions */
-@media screen and (min-witdh: 768px) {
-  .hero-actions {
-    align-items: flex-start;
-    flex: 1 1;
-    flex-direction: row;
-    grid-column: 1 / 2;
-    justify-content: initial;
-  }
-}
-
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  margin-left: 1rem;
-}
-
-.hero-actions > div {
-  display: flex;
-  width: 100%;
-}
-
-.hero-actions a {
-  max-width: 20rem;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-.hero-actions a.Primary {
-  background-color: #FDDD00;
-  border: 0.0625rem solid #FDDD00;
-  box-shadow: 0 0.125rem 0.3125rem 0 rgba(0, 0, 0, 0.2);
-  color: black;
-
-  margin-right: 20px;
-}
-
-.hero-actions a.Secondary {
-  border: 0.0625rem solid white;
-  color: white;
-}
-
-.hero-actions a.Primary, .hero-actions a.Secondary {
-  align-items: center;
-  border-radius: 0.25rem;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  text-decoration: none;
-  width: 100%;
-
-  font-size: 1.5rem;
-  height: 4rem;
-  line-height: 1.75rem;
-}
 
 /* header */
 .Header {
@@ -78,7 +22,7 @@ body {
 
 .Header-title {
   flex: content;
-  margin-top: 10px;
+  margin-top: 2px;
   color: white;
   font-size: 2.7rem;
   font-weight: 700;
@@ -131,3 +75,127 @@ body {
 .Header-login-button a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* container setting */
+
+.container {
+  display: grid;
+  margin: 0 auto;
+  padding: 10px 15px 0;
+  margin-top: 30px;
+  max-width: 1500px;
+}
+
+/* hero-blurb */
+.hero-blurb {
+  grid-column: 1 / 2;
+  margin-top: 20px;
+}
+
+.hero-blurb h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-features {
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.hero-features li {
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.hero-checkmark{
+  margin: 0 2px;
+}
+
+/* hero-actions */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-actions > div {
+  display: flex;
+  width: 100%;
+}
+
+.hero-actions a {
+  max-width: 20rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.hero-actions a.Primary {
+  margin-right: 2rem;
+}
+
+.hero-actions a.Primary, .hero-actions a.Secondary {
+  align-items: center;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+
+  font-size: 1.5rem;
+  height: 5rem;
+  line-height: 1.75rem;
+}
+
+@media screen and (max-width: 1460px) {
+  .hero-features {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .terminal-wrapper {
+    margin: 0 auto;
+  }
+}
+
+
+/* hidden scroll bar */
+.xterm-viewport {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.xterm-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+/* terminal */
+
+.terminal-wrapper{
+  grid-row: 1 / 3;
+  display: flex;
+  grid-column: 2 / 3;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.xterm-viewport{ 
+  margin: 0 auto;
+}
+
+.xterm-screen {
+  margin: 0 auto;
+}
+
+.xterm-screen canvas {
+  margin: 0 auto;
+}
+
