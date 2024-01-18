@@ -29,6 +29,11 @@ func NewIndex() *app.Handler {
 		Styles: []string{
 			"https://unpkg.com/ress/dist/ress.min.css",
 			"/web/style/index.css",
+			"https://cdn.jsdelivr.net/npm/xterm@4.17.0/css/xterm.css",
+		},
+		Scripts: []string{
+			"https://cdn.jsdelivr.net/npm/xterm@4.17.0/lib/xterm.min.js",
+			"https://cdn.jsdelivr.net/npm/xterm-pty@0.9.4/index.js",
 		},
 		ThemeColor: "#000000",
 		Title:      "Docker Card",
