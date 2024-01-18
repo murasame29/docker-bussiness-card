@@ -27,7 +27,7 @@ func NewIndex() *app.Handler {
 		Image: "/web/icon/logo.png",
 		// CSS適用可能
 		Styles: []string{
-			"https://unpkg.com/ress/dist/ress.min.css",
+			"/web/style/reset.css",
 			"/web/style/index.css",
 			"https://cdn.jsdelivr.net/npm/xterm@4.17.0/css/xterm.css",
 		},

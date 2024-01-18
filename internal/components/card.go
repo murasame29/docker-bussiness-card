@@ -18,7 +18,7 @@ func (c *Card) Render() app.UI {
 		app.Div().ID("terminal"),
 		app.Script().Src("/web/static/stack.js"),
 		app.Script().Src("/web/static/ws-delegate.js"),
-	)
+	).Class("terminal-wrapper")
 }
 
 func (c *Card) LoadScript() app.UI {
